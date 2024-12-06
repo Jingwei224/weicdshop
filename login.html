@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>USER</title>
+
+     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+     
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     
+     
+     <link rel="stylesheet" href="login.css">
+
+  </head>
+  <body>
+
+<div class="wrapper">
+   
+   <form id="login-form">
+      <h1>Login</h1>
+      <div class="input-box">
+         <input type="text" id="username" placeholder="Username" required> 
+         <i class='bx bxs-user'></i>
+      </div>
+      <div class="input-box">
+         <input type="password" id="password" placeholder="Password" required> 
+         <i class='bx bxs-lock-alt'></i>
+      </div>
+      <div class="remember-forgot">
+         <label><input type="checkbox">Remember me</label>
+      </div>
+
+     
+      <button type="submit">Login</button>
+
+      <style>
+         .guestmode-button{
+            display: inline-block;
+    background-color: #e8bc0e;
+    color: #000;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    position: center;
+    }
+
+    .guestmode-button:hover {
+    background-color: #d99f07;  
+}
+      </style>
+
+      <div class="register-link">
+         <p>Don't have an account? <a href="register.html">Register</a></p>
+         <br>
+         <a href="index.html" class="guestmode-button">Guest Mode</a>
+      </div>
+   </form>
+</div>
+ 
+<div class="image">
+   <img src="login.jpg" alt="">
+</div>
+
+
+<script>
+   
+   const loginForm = document.getElementById('login-form');
+
+   
+   loginForm.addEventListener('submit', function(event) {
+       event.preventDefault();  
+
+       
+       const username = document.getElementById('username').value;
+       const password = document.getElementById('password').value;
+
+       
+       if (username === 'user' && password === 'password') {
+           window.location.href = "index.html";  
+       } else {
+           alert("Invalid username or password. Please try again.");
+       }
+   });
+</script>
+
+</body>
+</html>

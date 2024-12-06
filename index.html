@@ -1,0 +1,1064 @@
+
+<!doctype html>
+<html lang="en">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CD Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #afb5ff;
+        }
+
+        header {
+            background-color: rgb(239, 236, 248,1);
+            color: #1b50ff;
+            text-align: left;
+            padding: 20px 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 4px 6px(rgba(0, 0, 0, 0.1));
+        }
+
+        
+    
+        body {
+    padding-top: 100px; 
+}
+
+        h1 {
+            margin: 20px 40px;
+        }
+
+        .cart-icon{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+
+        .login-link{
+            position: absolute;
+            top: 50px;
+            right: 15px;
+            color: white;
+            text-decoration:none;
+        }
+
+        .info-icon {
+            white-space: nowrap;
+    position: absolute;
+    top: 50%;               
+    left: 70%;              
+    transform: translate(-50%, -50%); 
+    margin: 0;              
+    
+    width: 50px;            
+    height: 50px;           
+    display: inline-block;  
+    text-align: center;     
+    line-height: 50px;      
+    
+}
+
+.contact-icon {
+            white-space: nowrap;
+    position: absolute;
+    top: 50%;               
+    left: 77.3%;              
+    transform: translate(-50%, -50%); 
+    margin: 0;              
+    
+    width: 50px;            
+    height: 50px;           
+    display: inline-block;  
+    text-align: center;     
+    line-height: 50px;      
+    
+}
+
+.review-icon {
+            white-space: nowrap;
+    position: absolute;
+    top: 50%;               
+    left: 85.6%;              
+    transform: translate(-50%, -50%); 
+    margin: 0;              
+    
+    width: 50px;            
+    height: 50px;           
+    display: inline-block;  
+    text-align: center;     
+    line-height: 50px;      
+    
+}
+
+.cart-icon {
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 92%; 
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+
+.login-link {
+    white-space: nowrap;
+    position: absolute;
+    top: 55%; 
+    left: 96%; 
+    transform: translate(-50%, -50%);
+    margin: 0;
+
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+}
+
+        
+.cart-icon, .login-link {
+    white-space: nowrap;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+        
+
+
+        .cd {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .cd-item {
+            width: 250px;
+            margin: 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .cd-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+
+        .cd-item h3 {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .cd-item p {
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        .info-icon {
+    color: #000; 
+    transition: color 0.1s ease;
+}
+
+.info-icon:hover {
+    color: #914d38; 
+}
+
+.contact-icon {
+    color: #000; 
+    transition: color 0.1s ease;
+}
+.contact-icon:hover {
+    color: #914d38; 
+}
+
+.review-icon {
+    color: #000; 
+    transition: color 0.1s ease;
+}
+.review-icon:hover {
+    color: #914d38; 
+}
+
+
+.cart-icon:hover {
+    color: #914d38; 
+}
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1> JW CD Shop</h1>
+        <a href="cart.html" class="cart-icon">
+        <img src="https://www.svgrepo.com/show/505324/cart-4.svg" alt="Cart Icon" style="width: 40px;">
+
+        <a href="login.html" class="login-link">
+            <img src="https://www.svgrepo.com/show/512729/profile-round-1342.svg" alt="Log In Link Icon" style="width: 31px;">
+        </a> 
+
+        <a href="info.html" class="info-icon">About Us</a>
+
+        <a href="contact.html" class="contact-icon">Contact Us</a>
+
+        <a href="review.html" class="review-icon">Review</a>
+    </header>
+
+    <div class="cd">
+        <div class="cd-item">
+        <body>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyM79wXoKjAFMyOmxOI6dQFm_VrvSYqxtzOw&s" alt="CD 1">
+            </a>
+            </body>
+            <div>
+                <audio controls style="width:250px;">
+                    <source src="https://www.dropbox.com/scl/fi/lnxmhwouai0l0s8oerlxs/tuihou.mp3?rlkey=dj33phbmtalf3j6zd42ni9vey&st=jcyt8w6q&dl=1" type="audio/mpeg">
+                    您的浏览器不支持音频播放。
+                </audio>
+                
+             </div>
+           <h3>退后</h3>
+            <p>Jay Chou</p>
+            <p>RM35.00</p>
+        </div>
+        
+
+        <div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNlgYZYUW5xVZzvmUc5W-qAVdjxYfyBPuJ3w&s" alt="CD 2">
+            <div>
+                <audio controls style="width:250px;">
+               <source src=" audio controls style="width:250px;>
+                   <source src="https://www.dropbox.com/scl/fi/7jcgxpxptz19ngnhwoswd/Jay-Chou-SilenceOfficial-MV.mp3?rlkey=anjb02q62vuytft5r8u9erhw0&st=n4ohc8e6&dl=1"type="audio/mpeg">
+                </audio>
+                </div>
+            <h3>安静</h3>
+            <p>Jay Chow</p>
+            <p>RM35.00</p>
+        </div>
+
+        <div class="cd-item">
+            <img src="https://i.kfs.io/album/tw/19003,1v3/fit/500x500.jpg" alt="CD 3">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="  audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/y7y0hqnvunsvxvy36zoty/Jay-Chou-Peninsula-IronboxOfficial-MV.mp3?rlkey=pthnna1v6xslf0g82il9i8phs&st=zsikddic&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>半岛铁盒</h3>
+            <p>Jay Chow</p>
+            <p>RM35.00</p>
+        </div>
+
+        <div class="cd-item">
+    <img src="https://upload.wikimedia.org/wikipedia/zh/c/c0/Missyou3000.jpg" alt="CD 4">
+    <div>
+        <audio id="audio-player" controls style="width:250px;">
+            <source src="https://www.dropbox.com/scl/fi/gc51j1nm477lccu3bh115/831-Miss-You-3000-Official-Music-Video.mp3?rlkey=zj9atnra4ii8bro1qx8gwp09s&st=ulki17ei&dl=1" type="audio/mpeg">
+        </audio>
+    </div>
+    <h3>想见你想见你想见你</h3>
+    <p>The Last Day of Summer 831</p>
+    <p>RM28.00</p>
+</div>
+
+
+
+<div class="cd-item">
+    <img src="https://scontent.fpen1-1.fna.fbcdn.net/v/t1.6435-9/77410981_1424540834370911_5281140148493352960_n.jpg?stp=dst-jpg_s600x600&_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeHJFv_xFfJmXPjaF-1HOUrIgRTuVj6hYWiBFO5WPqFhaCYLYk2LHJocEVpLBlDysBrYkbEbqykXO9G93f_3dSg3&_nc_ohc=LIeGle0mW6YQ7kNvgEt1_R8&_nc_zt=23&_nc_ht=scontent.fpen1-1.fna&_nc_gid=A-9SaIAhemLuHHcUfTa_TcH&oh=00_AYDub1qLVVwApbFjVJS_fFj63VT_qF3DAeRPWFBL6FSbAg&oe=676F912D" alt="CD 5">
+    <div>
+        <audio id="audio-player" controls style="width:250px;">
+            <source src="https://www.dropbox.com/scl/fi/2txkk6ou8eu5nte3oqfyd/Nine-Chen-See-Your-Voice-Official-Music-Video.mp3?rlkey=istv6xo1su7kdq9ijviwkcddp&st=lw0ek1kz&dl=1" type="audio/mpeg">
+        </audio>
+    </div>
+    <h3>看见你的声音</h3>
+    <p>Nine Chen</p>
+    <p>RM30.00</p>
+</div>
+
+<script>
+    const audio = document.getElementById('audio-player');
+    // If you want to use a custom progress bar, ensure you have a progress bar element
+    // Example: <div class="progress-bar"></div>
+    const progressBar = document.querySelector('.progress-bar');
+    
+    if (progressBar) {
+        progressBar.addEventListener('click', (e) => {
+            const rect = progressBar.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const percent = clickX / rect.width;
+            audio.currentTime = percent * audio.duration;
+        });
+    }
+</script>
+
+
+        <div class="cd-item">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/7/78/Shi_Shi_Remembered.jpeg" alt="CD 6">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/qip53ytdx4q5qiy9s2dou/Shi-Shi-Remembered-Official-Music-Video.mp3?rlkey=hey36en80487lsyqxfv6wq449&st=mbsrso82&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>眼泪记得你</h3>
+            <p>Shi Shi</p>
+            <p>RM28.00</p>
+        </div>
+
+        <div class="cd-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b273ada4a1b5e704df71e9eed0d2" alt="CD 7">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/cx14zl0pa5wbquz4bangj/.mp3?rlkey=j0l229urv4f9xind1tfvbgn1z&st=nvkx53iw&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>星晴</h3>
+            <p>Jay Chow</p>
+            <p>RM34.00</p>
+        </div>
+
+        <div class="cd-item">
+            <img src="https://mycdshop.com/cdn/shop/files/123ku_medium.jpg?v=1690440389" alt="CD 8">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="  audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/djcy0127q56jnt71inh87/.mp3?rlkey=t7yaiudo05z1uzbre3o074db4&st=exnt7l6v&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>飘流教室</h3>
+            <p>Leo Ku，Edan</p>
+            <p>RM25.00</p>
+        </div>
+
+        <div class="cd-item">
+            <img src="https://i.kfs.io/album/global/41439403,4v1/fit/500x500.jpg" alt="CD 9">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style=" width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/ou3tx3glf5wf4egnqk85s/.mp3?rlkey=2tsdugdjh2o1mfn3wfu0gp6u0&st=bivgu8j1&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>必杀技</h3>
+            <p>Leo Ku</p>
+            <p>RM30.00</p>
+        </div>
+
+        <div class="cd-item">
+    <img src="https://i.kfs.io/album/global/264400523,0v1/fit/500x500.jpg" alt="CD 10">
+    <div>
+        <audio controls style="width:250px;">
+            <source src="https://www.dropbox.com/scl/fi/2cl0y65igd6byzsubf0k4/gareth.t-official-video.mp3?rlkey=jakx1eznmwd8flk406x2wj3xz&st=1jzjjitc&dl=1" type="audio/mpeg">
+            
+        </audio>
+    </div>
+    <h3>紧急联络人</h3>
+    <p>Gareth.T</p>
+    <p>RM29.00</p>
+</div>
+
+
+
+        
+        <div class="cd-item">
+    <img src="https://i.kfs.io/album/global/148327401,0v1/fit/500x500.jpg" alt="CD 11">
+    <div>
+        <audio controls style="width:250px;">
+            <source src="https://www.dropbox.com/scl/fi/liz5zjujcymv1oonexwrv/.mp3?rlkey=w6vxanfktect9nntxkmi2zape&st=xfn1bddl&dl=1" type="audio/mpeg">
+            
+        </audio>
+    </div>
+    <h3>触碰不到的你</h3>
+    <p>余佳运</p>
+    <p>RM26.00</p>
+</div>
+
+
+
+
+            <div class="cd-item">
+            <img src="https://i.kfs.io/album/global/23212,1v1/fit/500x500.jpg" alt="CD 12">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/ye0gaca5t2nj3iprbvhwj/.mp3?rlkey=zkgkxuppqysh086hb389hwne0&st=3lig4fm7&dl=1"type="audio/mpeg">
+            </audio>
+         </div>
+           <h3>晴天</h3>
+            <p>Jay Chow</p>
+            <p>RM34.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQa6-QmwXiGh3hkfIH1s_hYaZddeRak8Ptc1A&s" alt="CD 13">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/x7g097pkaqmnbj7yv030x/.mp3?rlkey=y8y9x5ghoulcg4qrl304xxqdy&st=g1fkynmk&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>有我呢</h3>
+            <p>郭一凡</p>
+            <p>RM29.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/265477163,0v1/fit/500x500.jpg" alt="CD 14">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/bg9gi0b7p45j96awc8ozb/.mp3?rlkey=ibfzdrzld1byi73md6hkulk4v&st=zafdr3o0&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>藉口</h3>
+            <p>Jay Chow</p>
+            <p>RM29.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/44195,0v1/fit/500x500.jpg" alt="CD 15">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/yuj809rhq5a0i2g4b93fw/.mp3?rlkey=9ssz2vwok2i6zmgiqt68qa1w2&st=zril45t1&dl=1"type="audio/mpeg">
+            </audio>
+           
+            </div>
+           <h3>太聪明</h3>
+            <p>陈绮贞</p>
+            <p>RM27.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/142042170,2v1/fit/500x500.jpg" alt="CD 16">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/n0wcrsjavttjr8jrpixx3/.mp3?rlkey=43mk8g7c8qxms9p1x4y7kqdfc&st=f28kuael&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>如果可以</h3>
+            <p>韦礼安</p>
+            <p>RM26.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/my/262938508,0v1/fit/500x500.jpg" alt="CD 17">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/1tyw9u9p1miwndz36agzz/LaLa.mp3?rlkey=qx9zm0td7meo5qz8nvwhb1uz2&st=z8oyueq6&dl=1"type="audio/mpeg">
+            </audio>
+           
+            </div>
+           <h3>最初的记忆</h3>
+            <p>徐佳莹</p>
+            <p>RM28.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b27367c9524352aaae8a5eec7541" alt="CD 18">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/vtnjqjgbdd35zxdnhn6ul/Lyrics.mp3?rlkey=dmnd1aj2nwf6u02i8tzecy4yb&st=ympklxb6&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>拉过勾的</h3>
+            <p>陆虎</p>
+            <p>RM25.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/19620776,4v1/fit/500x500.jpg" alt="CD 19">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/xgtjhkxr7pwgojeab9q8u/A-Lin-Tian-Ruo-You-Qing-Lyric-Video-Unofficial.mp3?rlkey=jas8mgjy8sb0kqeint4ruqgry&st=upuza91c&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>天若有情</h3>
+            <p>A-LIN</p>
+            <p>RM28.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/12459951,1v1/fit/500x500.jpg" alt="CD 20">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/tcit26uez7ce5cr9ix8ep/.mp3?rlkey=zfsi1f6zsdcejjbuh0cqkvxqo&st=8ywlnn9w&dl=1"type="audio/mpeg">
+            </audio>
+           
+            </div>
+           <h3>普通朋友</h3>
+            <p>陶喆</p>
+            <p>RM30.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/34001787,5v1/fit/500x500.jpg" alt="CD 21">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/irj2waf8wrdti9bw2aodj/.mp3?rlkey=sl9ysfefhz6gxqw48k4glf1sp&st=dc71pf3w&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>天天</h3>
+            <p>陶喆</p>
+            <p>RM30.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://cdns-images.dzcdn.net/images/cover/6fa342f8d5046239ba482090f949088d/1900x1900-000000-80-0-0.jpg" alt="CD 22">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/xsa1l3cr2ucd166y6ncmj/My-Only-Girl.mp3?rlkey=fs6vx8ezy0skfmvp6t6nlcyyz&st=og94rgg5&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>My Only Girl</h3>
+            <p>陶喆</p>
+            <p>RM30.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/12460210,0v1/fit/500x500.jpg" alt="CD 23">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/x2tw7lb490igtiyrupr7e/David-Tao-Love-Can......-MV.mp3?rlkey=vwy8bdnbds6t6m2lnbgn8pauk&st=y31axfgs&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>就是爱你</h3>
+            <p>陶喆</p>
+            <p>RM30.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/117840,1v1/fit/500x500.jpg" alt="CD 24">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/780nnjbjxri1ow20cjqex/Khalil-Fong-Official-Music-Video.mp3?rlkey=tgdmea9g9hack74z0xbdt22gu&st=lfr4ryu2&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>为你写的歌</h3>
+            <p>方大同</p>
+            <p>RM35.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgV_1I6yZ02O8GE0R7GlyVO6VlYxr-5CKKsA&s" alt="CD 25">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/ed25lhavau7x2obrtl43z/.mp3?rlkey=lqlt5vgtxkomyeai56ig0zot4&st=pv07sc96&dl=1"type="audio/mpeg">
+            </audio>
+         
+            </div>
+           <h3>开不了口</h3>
+            <p>Jay Chow</p>
+            <p>RM35.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b273232711f7d66a1e19e89e28c5" alt="CD 26">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/twmfyhelibrruosz5dubt/Bruno-Mars-24K-Magic-Official-Music-Video.mp3?rlkey=w810vg5m1gn2k7m8pfd2cw4s4&st=40dqlzdd&dl=1"type="audio/mpeg">
+            </audio>
+           
+            </div>
+           <h3>24K Magic</h3>
+            <p>Bruno Mars</p>
+            <p>RM28.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i1.sndcdn.com/artworks-000500637585-bkne8w-t500x500.jpg" alt="CD 27">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/s2a3d5ue4rpp395dqfpoc/Mark-Ronson-Uptown-Funk-Official-Video-ft.-Bruno-Mars.mp3?rlkey=rp3auxjmkm8ar16blb7di7tu1&st=ldg41go8&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>Uptown Funk</h3>
+            <p>Mark Ronson</p>
+            <p>RM33.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i1.sndcdn.com/artworks-cnH0XFWI67ZFBZuU-Zob8WA-t500x500.jpg" alt="CD 28">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/zqqenxe7ue8dhel5c8ei9/Bruno-Mars-Treasure-Lyrics.mp3?rlkey=rgdl5resp5viobihsx1otdwlx&st=62vs70u2&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>Treasure</h3>
+            <p>Bruno Mars</p>
+            <p>RM30.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://upload.wikimedia.org/wikipedia/en/f/f4/That%27s_What_I_Like_Remixes.jpg" alt="CD 29">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/id5npcxb210cvceux11vp/Bruno-Mars-Thats-What-I-Like-Official-Music-Video.mp3?rlkey=mw8heqhl38i7std6gfsb0orw7&st=nzx83cpq&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>That's What I Like</h3>
+            <p>Bruno Mars</p>
+            <p>RM32.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://images.genius.com/280396bda65db7a491f8bf8126e9bed2.1000x1000x1.jpg" alt="CD 30">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/0rwyh0g44z56uyu85lqn9/Bruno-Mars-Versace-On-The-Floor-Lyrics.mp3?rlkey=u4q254mp4fvtar6xeoetpxi4u&st=c248y4dd&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>Versace On The Floor</h3>
+            <p>Bruno Mars</p>
+            <p>RM30.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/6653128,0v1/fit/500x500.jpg" alt="CD 31">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/csh4b353j2kmkjfhnqzya/Khalil-Fong-Official-Music-Video.mp3?rlkey=fxqtrcxahoixqlfsgdwpb7267&st=f35bljoe&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>黑白</h3>
+            <p>方大同</p>
+            <p>RM33.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyaqCJuIuTYTjUBGcpIuC9BPOSwFujZIC7dw&s" alt="CD 32">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/snxtp9z256o3hqliqg8fj/Uu-Man-Man-Lyrics-PinyinEnglish-Translation.mp3?rlkey=fq9nj7yfi7if7fl1wgqizj4rn&st=kgh4ufyc&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>慢慢</h3>
+            <p>颜人中</p>
+            <p>RM29.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://c-fa.cdn.smule.com/rs-s23/arr/b1/34/9fd178d2-6cfd-460c-8eed-85009f6bd2f9.jpg" alt="CD 33">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/mqcgrpcknvt29yrkhrwi5/.mp3?rlkey=xboyq0q9odzgq32mmxyicv4t7&st=dqsq9u9a&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>爱如潮水</h3>
+            <p>张信哲</p>
+            <p>RM27.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://images.genius.com/da347147c8602f48b15d3832115f172a.1000x1000x1.png" alt="CD 34">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/825nkchwdpa5wm2qnomve/Justin-Bieber-Come-Around-Me-Audio.mp3?rlkey=wrjlndskko42jciyq540ybsqm&st=319w50sh&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>Come Around Me</h3>
+            <p>Justin Bieber</p>
+            <p>RM35.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROFRI2ih7zPnc8aRZ-gN9Yv5aoXpYGUonwlQ&s" alt="CD 35">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/2q9o8habiep6ipiz5h3n7/.mp3?rlkey=hvgfxnwas145mty559l15qi3n&st=d67oc5je&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>说好的幸福呢</h3>
+            <p>Jay Chow</p>
+            <p>RM38.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i1.sndcdn.com/artworks-000125052198-t40gs7-t500x500.jpg" alt="CD 36">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/knnrpcubjfwm0l3ewnmrb/IF-YOU.mp3?rlkey=pci9sfklj97f8gtqqonksg0yj&st=wlmz60hh&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>If You</h3>
+            <p>Big Bang</p>
+            <p>RM29.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL2UkyTKfkUxD26peyMFuk9wdPbNXeMo2g_Q&s" alt="CD 37">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/bvw3ergj6g2rml9q4cgwx/.mp3?rlkey=3dtz0wqjaafhs05h6hhgj6mrk&st=7ce4ae82&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>爱在西元前</h3>
+            <p>Jay Chow</p>
+            <p>RM36.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPnmYSxXPGFFa9tXQcSnYPyL86Kev_yvzSeg&s" alt="CD 38">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/4s7x3rtu42esbuyxb1oyn/.mp3?rlkey=7z2365zrsfno8cit0l8k9dkth&st=vtwhqxvk&dl=1"type="audio/mpeg">
+            </audio>
+           
+            </div>
+           <h3>你听得到</h3>
+            <p>Jay Chow</p>
+            <p>RM24.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/273399348,2v1/fit/500x500.jpg" alt="CD 39">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/oq24solfpb7psstcnpbcj/Twenty-Three.mp3?rlkey=vqv8ysuj9s80kyo5prkg0nked&st=3w1aw9c4&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>才二十三</h3>
+            <p>方大同</p>
+            <p>RM36.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/270550943,1v1/fit/500x500.jpg" alt="CD 40">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/8tpopn00i58ul8zkrjc3n/Eric-Official-Music-Video.mp3?rlkey=bxle9bi3bv2v4sbcx4rou3gqp&st=u287kfmi&dl=1"type="audio/mpeg">
+            </audio>
+          
+            </div>
+           <h3>青春要用几行诗来写</h3>
+            <p>Eric Chou</p>
+            <p>RM29.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b2737df1203d998ff3b40a139a6c" alt="CD 41">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/1p4gcvrbc3ri9ihntlj6n/.mp3?rlkey=p28n96w7eg2g3xhutu90vn6xv&st=bluqfhel&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>不能说的秘密</h3>
+            <p>Jay Chow</p>
+            <p>RM39.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/263116582,0v1/fit/500x500.jpg" alt="CD 42">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/1712tjodmenvkgtgf4j0y/WizH-Follow-MV.mp3?rlkey=oww6jejuu5o5ndeqeangv1fk5&st=ekqrfq4k&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>罗生门</h3>
+            <p>张子豪</p>
+            <p>RM32.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/265477088,0v1/fit/500x500.jpg" alt="CD 43">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/7op84vd2802kwqkpsqpii/.mp3?rlkey=t5x4a9ow2dw8uk9jlfuwfgamg&st=i9hwnwlb&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>最长的电影</h3>
+            <p>Jay Chow</p>
+            <p>RM36.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/197262939,4v1/fit/500x500.jpg" alt="CD 44">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/fwzwqox7b9i5cba939lsf/.mp3?rlkey=7wnol5tf42s2gxgn977zp3hp0&st=nyf4jdcu&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>人生起起落落落落落</h3>
+            <p>菲道尔</p>
+            <p>RM36.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/51/1f/c2/511fc202-6d86-25cb-82b0-4f3e900271fa/cover.jpg/600x600bf-60.jpg" alt="CD 45">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/ddkapd5rxzkch1o0l4ira/WMXGHZYSQN-Lyrics.mp3?rlkey=crdls9mojc7x1y3nz11g23xgt&st=ncbu0xne&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>WMXGHZYSQN</h3>
+            <p>菲道尔</p>
+            <p>RM35.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/268506756,1v1/fit/500x500.jpg" alt="CD 46">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/o86ialyyuembc1xelctok/Firdhaus-l-Lyrics.mp3?rlkey=us1rlbyx85uibusgecusdk4gy&st=jsmbcblj&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>友谊长存</h3>
+            <p>菲道尔</p>
+            <p>RM36.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/271774832,1v1/fit/500x500.jpg" alt="CD 47">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/rwg3oncb5er0bem5i7767/Firdhaus-l-Lyrics.mp3?rlkey=w9qu63luxeegklt9hfml5grfj&st=n08in99l&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>能遇见就很不错了</h3>
+            <p>菲道尔</p>
+            <p>RM36.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/5206958,0v1/fit/500x500.jpg" alt="CD 48">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/g3pua8yx908au4c35ir6a/.mp3?rlkey=beh9dn5uz2nv3stdaphodduv3&st=r60em1kw&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>越难越爱</h3>
+            <p>吴若希</p>
+            <p>RM37.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b2735d5f922eee310f30c01687d4" alt="CD 49">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/ep3d1gitv46kwb893u9a8/Dior-l-Lyrics.mp3?rlkey=71je08wyx0qk6yse1hp61oryn&st=0m0js3m1&dl=1"type="audio/mpeg">
+            </audio>
+            
+            </div>
+           <h3>有天会再相见</h3>
+            <p>大颖</p>
+            <p>RM38.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/72926962,0v1/fit/500x500.jpg" alt="CD 50">
+           <div>
+            <audio controls style="width:250px;">
+           <source src=" audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/p1yas2psyqzhsbwqkqlim/.mp3?rlkey=f713vcijfc6b05w8w9926ldin&st=nr13u0ir&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>凡人不懂爱</h3>
+            <p>胡鸿钧</p>
+            <p>RM40.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.scdn.co/image/ab67616d0000b273f40113d5be5900c481981041" alt="CD 51">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/bs39tky63kqzyedo9omct/Billkin-Ever-Forever-OST..mp3?rlkey=mbujf74u7srzsxqy30b02gik2&st=iao3ebqk&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>Ever-Forever</h3>
+            <p>Billkin</p>
+            <p>RM45.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://images.genius.com/1c575a8d63a57b3d1a91877fb82d88aa.1000x1000x1.jpg" alt="CD 52">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/1gu397au28ftpzkgck66y/PONCHET-feat.VARINZOfficial-MV.mp3?rlkey=zrf3anx1kadhd3ks3u2qm77xo&st=pd0kjdxi&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>I Like You The Most</h3>
+            <p>Ponchet</p>
+            <p>RM39.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlWNa4pZQtgJLbDoEi0bICZeIO_AR8LLPjDg&s" alt="CD 53">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/537d1o1w9pf24spx3l1yt/ing.mp3?rlkey=0kxj49n9pwb1fes46k52vn5mz&st=yjx2silc&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>恋爱ing</h3>
+            <p>五月天</p>
+            <p>RM43.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/90346,0v1/fit/500x500.jpg" alt="CD 54">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/0ngocr4imx17zn5eiu9yh/MAYDAY-feat.-Official-Live-Video.mp3?rlkey=7a3iz32agmw2lpax25yrws6cr&st=k52ck8al&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>私奔到月球</h3>
+            <p>五月天</p>
+            <p>RM46.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNhwp3tFEE23XWwv5ycKN-Urdw0VUpHrP7vw&s" alt="CD 55">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/roamdbnnf159nrvw5qf9q/.mp3?rlkey=f6ktzrjl770sk8ous9j9ve9uz&st=970wemjg&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>离开地球表面</h3>
+            <p>五月天</p>
+            <p>RM48.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://m.media-amazon.com/images/I/51YsEX6ryjL._UXNaN_FMjpg_QL85_.jpg" alt="CD 56">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/m0q1l9t18d11znuphuiep/Liao-JunTao-Lyric-Video.mp3?rlkey=n98j4mbd4jv1r49hmrub0s2na&st=sbte1yh7&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>过季短袖</h3>
+            <p>廖俊涛</p>
+            <p>RM29.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://upload.wikimedia.org/wikipedia/zh/2/26/%E6%96%B9%E5%A4%A7%E5%90%8C_%E6%9C%AA%E4%BE%86_Wonderland.jpg" alt="CD 57">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/ptz1u539gw5on5011vnhq/Lyrics.mp3?rlkey=3sdx60b5yd7e8bobvzhnrmtd2&st=hsqtnhiu&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>爱爱爱</h3>
+            <p>方大同</p>
+            <p>RM39.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjOpXy1hzeTelpAolAg0vsxdb2JjMwIWis3Q&s" alt="CD 58">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/qvkde60ewjdypbph4b9cs/.mp3?rlkey=3920tiuxdhz48q6lczzl3guf4&st=9hysft0f&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>简单爱</h3>
+            <p>Jay Chow</p>
+            <p>RM50.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://i.kfs.io/album/global/310226,0v1/fit/500x500.jpg" alt="CD 59">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/fa2jhivcwuid79q8ajs7e/.mp3?rlkey=kbq6hy1thrci4rdc9uo90toyh&st=cwl1bb2e&dl=1"type="audio/mpeg">
+            </audio>
+            </div>
+           <h3>干杯</h3>
+            <p>五月天</p>
+            <p>RM46.00</p>
+</div>
+
+<div class="cd-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhD2qnySiZQkXrj8Kz-tSNg0JiDc_kntUNDQ&s" alt="CD 60">
+           <div>
+            <audio controls style="width:250px;">
+           <source src="   audio controls style="width:250px;>
+               <source src="https://www.dropbox.com/scl/fi/mefhmzxfnno9ngy33tkv6/.mp3?rlkey=26y4wvakw90ej9p7uqvfmd433&st=aob176tv&dl=1"type="audio/mpeg">
+            </audio>
+           </div>
+           <h3>搁浅</h3>
+            <p>Jay Chow</p>
+            <p>RM50.00</p>
+</div>
+
+</body>
+
+
+
+</html>

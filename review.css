@@ -1,0 +1,66 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  background-color: #b0b4f5;
+  padding: 20px 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.reviews {
+  text-align: center;
+  padding: 20px;
+}
+
+.review-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.review-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  padding: 15px;
+  text-align: center;
+}
+
+.review-card img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.review-card h3 {
+  margin: 10px 0 5px;
+}
+
+.review-card .role {
+  color: #888;
+  font-size: 0.9em;
+}
+
+.review-card .stars {
+  color: #f7c846;
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+
+.review-card p {
+  font-size: 0.95em;
+  margin: 5px 0;
+}
